@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <script src="./script.js"></script>
+    <!-- icon -->
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/010/063/522/original/todo-list-icon-notepad-with-completed-todo-list-3d-render-png.png">
+  <!-- fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="./script.js"></script>
+<!-- tailwind -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-rose-300">
+<div class="flex">
+  <div class="w-2/5 p-30">
+    <img src="https://static.vecteezy.com/system/resources/previews/021/629/730/original/3d-illustration-of-to-do-list-png.png" alt="">
+  </div>
+  <div class="w-3/5 p-30">
+    <p class="text-4xl fw-bold text-center text-rose-600">My To-Do-List</p>
+
+        
+<form class="flex items-center max-w-sm mx-auto mt-6">   
+    <label for="simple-search" class="sr-only" placeholder="Enter the Task">Enter the Task</label>
+    <div class="relative w-full">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+           <img src="https://static.vecteezy.com/system/resources/previews/010/063/522/original/todo-list-icon-notepad-with-completed-todo-list-3d-render-png.png" width="20px" alt="">
+        </div>
+        <input id="taskInput" type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter the Task" required />
+    </div>
+    <button onclick="addTask(event)" type="submit" class=" ms-2 text-sm font-medium text-white ">
+       <img src="https://www.pngmart.com/files/21/Blue-Add-Button-PNG.png" width="40px" alt="">
+    </button>
+</form>
+<ul id="taskList" type="none">
+
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>
